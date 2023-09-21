@@ -3,6 +3,7 @@
 #include "st7789.h"
 #include <ASTIdef.h>
 #include "fonts.h"
+#include "icon.h"
 // *** Define Name of Color
 //#define BLACK   0x0000
 //#define WHITE   0xFFFF
@@ -27,7 +28,7 @@
 
 #define U1_INDEX_TEXT_TOTAL_NUM           (U1)29
 #define U1_INDEX_BOX_TOTAL_NUM            (U1)15
-#define U1_INDEX_ICON_TOTAL_NUM           (U1)3
+#define U1_INDEX_ICON_TOTAL_NUM           (U1)6
 
 #define U1_INDEX_TEXT_SHIP_RPM_LABEL                0
 #define U1_INDEX_TEXT_SHIP_RPM_VALUE                1
@@ -136,7 +137,7 @@ const ST_LCD_ICON_INFO cst_Icon [] =
       .int_Y = 200,
       .int_W = 24,
       .int_H = 30,
-      .u1_Color = YELLOW,
+      .u1_Color = BLACK,
     },
     .int_X = 165,
     .int_Y = 200,
@@ -149,7 +150,7 @@ const ST_LCD_ICON_INFO cst_Icon [] =
       .int_Y = 205,
       .int_W = 22,
       .int_H = 22,
-      .u1_Color = YELLOW,
+      .u1_Color = BLACK,
     },
     .int_X = 230,
     .int_Y = 205,
@@ -162,12 +163,51 @@ const ST_LCD_ICON_INFO cst_Icon [] =
       .int_Y = 210,
       .int_W = 24,
       .int_H = 17,
-      .u1_Color = YELLOW,
+      .u1_Color = BLACK,
     },
     .int_X = 296,
     .int_Y = 210,
     .pcs_icon = (uint16_t*) iconBattery,
   },
+  {
+    .st_Box=
+	{
+      .int_X = 0,
+      .int_Y = 122,
+      .int_W = 18,
+      .int_H = 17,
+      .u1_Color = BLACK,
+    },
+	.int_X = 0,
+	.int_Y = 122,
+	.pcs_icon = (uint16_t*) iconShip,
+  },
+  {
+    .st_Box=
+  	{
+      .int_X = 0,
+      .int_Y = 222,
+      .int_W = 8,
+      .int_H = 14,
+      .u1_Color = BLACK,
+    },
+  	.int_X = 0,
+  	.int_Y = 222,
+  	.pcs_icon = (uint16_t*) iconTimelife,
+  },
+  {
+    .st_Box=
+    {
+    .int_X = 20,
+    .int_Y = 140,
+    .int_W =114,
+    .int_H = 61,
+    .u1_Color = BLACK,
+    },
+    .int_X = 20,
+    .int_Y = 140,
+    .pcs_icon = (uint16_t*) rpmLevel0,
+  }
 };
 
 const ST_LCD_BOX_INFO cst_Box [] =

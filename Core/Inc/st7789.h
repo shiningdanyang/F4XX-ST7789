@@ -2,7 +2,7 @@
 #define __ST7789_H
 #include "fonts.h"
 #include "main.h"
-
+#include "icon.h"
 /* choose a Hardware SPI port to use. */
 #define ST7789_SPI_PORT hspi1
 extern SPI_HandleTypeDef ST7789_SPI_PORT;

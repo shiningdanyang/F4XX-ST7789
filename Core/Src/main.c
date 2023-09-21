@@ -172,6 +172,8 @@ int main(void)
 //	  }
 	  DisplayUVIndex(100*7);
 	  DisplayBattery(i);
+	  ST7789_DrawImage(0, 40, 58, 58, weatherSunny);
+
 	  for(int i = 0; i < 9999*4; i++)
 	  {
 	  	DisplayRPM(i);

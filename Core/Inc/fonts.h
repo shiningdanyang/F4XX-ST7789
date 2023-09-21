@@ -24,9 +24,6 @@ extern FontDef Font_8x12;
  *******************************************/
 
 /* 128x128 pixel RGB565 image */
-extern uint16_t iconPressure[][24];
-extern const uint16_t iconTemperature[][22];
-extern const uint16_t iconBattery[];
 
 /* 240x240 pixel RGB565 image 
 extern const uint16_t knky[][240];

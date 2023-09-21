@@ -1,4 +1,5 @@
 "./Core/Src/fonts.o"
+"./Core/Src/icon.o"
 "./Core/Src/main.o"
 "./Core/Src/st7789.o"
 "./Core/Src/stm32f4xx_hal_msp.o"

@@ -60,8 +60,8 @@ all: main-build
 main-build: F411-ST7789Vi.elf secondary-outputs
 
 # Tool invocations
-F411-ST7789Vi.elf F411-ST7789Vi.map: $(OBJS) $(USER_OBJS) D:\Desktop\STM32CubeIde_commonWorkspace\F411-ST7789Vi\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "F411-ST7789Vi.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Desktop\STM32CubeIde_commonWorkspace\F411-ST7789Vi\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411-ST7789Vi.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F411-ST7789Vi.elf F411-ST7789Vi.map: $(OBJS) $(USER_OBJS) C:\Users\EN-LT-33\Desktop\F4XX-ST7789\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "F411-ST7789Vi.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\EN-LT-33\Desktop\F4XX-ST7789\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411-ST7789Vi.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
